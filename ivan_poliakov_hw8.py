@@ -1,12 +1,16 @@
 import datetime
 
 """task 1"""
-num = input("print some numbers \n")
-num = num.split(" ")
-def int_args(n):
-    max_args = max(n)
-    print(max_args)
-int_args(num)
+num1 = input("print number 1 \n")
+num2 = input("print number 2 \n")
+num3 = input("print number 3 \n")
+num1 = int(num1)
+num2 = int(num2)
+num3 = int(num3)
+def int_args(n1, n2, n3):
+    max_args = max(n1, n2, n3)
+    return max_args
+print("Найбольшее число: ", int_args(num1, num2, num3))
 
 """task 2"""
 one = 7
